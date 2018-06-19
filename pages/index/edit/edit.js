@@ -32,19 +32,6 @@ Page({
     })
     console.log("成功进入编辑页面,plan=");
     console.log(plan);
-
-    /*
-    var arr = getCurrentPages();
-    if (arr[arr.length - 2].route == 'pages/index/index') {
-      var id = options.id;
-      var edit = arr[arr.length - 2].data.planData[options.id];
-      this.setData({
-        edit:edit,
-        id:id
-      });
-      console.log(edit);
-    }
-    */
   },
   formSubmit:function(e){
     //接收表单数据并传递给父页面
@@ -85,32 +72,6 @@ Page({
         console.log("成功从编辑页面返回");
       }
     })
-    /*
-    var editplanData = new Object();
-    editplanData.time = t;
-    editplanData.planName = d.planName;
-    if (d.planType == "类型一") editplanData.planType = 1;
-    else editplanData.planType = 2;
-    editplanData.planTime = d.planTime;
-    editplanData.planDesc = d.planDesc;
-    //获取父页面并传值
-    var arr = getCurrentPages();
-    if (arr[arr.length - 2].route == 'pages/index/index') {
-      wx.navigateBack({
-        delta: 1,
-        success: function (res) {
-          var planData = arr[arr.length - 2].data.planData;
-          //console.log(newplanData[0].planName)
-          planData[that.data.id]=editplanData;
-          arr[arr.length - 2].setData({
-            planData: planData
-          });
-          getApp().globalData.planData=planData;
-          //wx.setStorage('planData', planData);
-        }
-      })
-    }
-    */
   },
   deleteP:function(){
     var planData=wx.getStorageSync("planData");
@@ -125,30 +86,6 @@ Page({
         console.log("成功删除计划并返回");
       }
     })
-    /*
-    var arr = getCurrentPages();
-    if (arr[arr.length - 2].route == 'pages/index/index') {
-      wx.navigateBack({
-        delta: 1,
-        success: function (res) {
-          var editplanData = arr[arr.length - 2].data.planData;
-          var editplanNum = arr[arr.length - 2].data.planNum;
-          editplanData.splice(that.data.id, 1);
-          console.log(editplanData);
-          console.log(that.data.id);
-          editplanNum--;
-          arr[arr.length - 2].setData({
-            planData: editplanData,
-            planNum: editplanNum
-          });
-          //wx.setStorage('planData', editplanData);
-          //wx.setStorage('planNum', editplanNum);
-          getApp().globalData.planData=editplanData;
-          getApp().globalData.planNum=editplanNum;
-        }
-      });
-    }
-    */
   },
   changeStar:function(e){
     var index = e.currentTarget.dataset.index;
@@ -178,7 +115,7 @@ Page({
     plan.planStar=that.data.stars;
     var historyPlan=wx.getStorageSync("historyPlan")||[];
     var stars=wx.getStorageSync("stars")||0;
-    var planstarNum=wx.getStorageSync("planstarNum")||[];
+    var planstarNum=wx.getStorageSync("planstarNum")||[0,0,0,0,0];
     console.log("historyPlan=")
     console.log(historyPlan);
     historyPlan.push(plan);
@@ -197,41 +134,6 @@ Page({
         console.log(plan)
       }
     })
-    /*
-    var data=getApp().globalData;
-    data.history.push(plan);
-    data.stars+=this.data.stars;
-    console.log("history="+getApp().globalData.history);
-    console.log("stars=" + getApp().globalData.stars);
-    var stars = data.planStarNum;
-    stars[this.data.stars - 1]++;
-    wx.getStorage({
-      key: 'planStarNum',
-      data:stars,
-      success: function(res) {},
-    })
-    var arr = getCurrentPages();
-    wx.navigateBack({
-      delta: 1,
-      success: function (res) {
-        console.log("test2");
-        var editplanData = arr[arr.length - 2].data.planData;
-        var editplanNum = arr[arr.length - 2].data.planNum;
-        editplanData.splice(that.data.id, 1);
-        console.log(editplanData);
-        console.log(that.data.id);
-        editplanNum--;
-        arr[arr.length - 2].setData({
-          planData: editplanData,
-          planNum: editplanNum
-        });
-        //wx.setStorage('planData',editplanData);
-        //wx.setStorage('planNum',editplanNum);
-        getApp().globalData.planData = editplanData;
-        getApp().globalData.planNum = editplanNum;
-      }
-    })
-    */
   },
   goback:function(){
     this.setData({

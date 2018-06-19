@@ -14,25 +14,25 @@ Page({
     if(d.planName.length<=0){
       //提示：计划名称不能为空
       wx.showToast({
-        /*
-        记得改图标
-        */
-        image:'pages/image/wrong.png',
+        image:'/pages/image/wrong.png',
         title: '计划名称为空',
       });
     }else if(d.planTime.length<=0){
       //提示：计划时间不能为空
       wx.showToast({
+        image: '/pages/image/wrong.png',
         title: '计划时间为空',
       });
     }else if(d.planType.length<=0){
       //提示：计划类型不能为空
       wx.showToast({
+        image: '/pages/image/wrong.png',
         title: '计划类型为空',
       });
     }else if(d.planDesc.length<=0){
       //提示：计划描述不能为空
       wx.showToast({
+        image: '/pages/image/wrong.png',
         title: '计划描述为空',
       });
     }else{
@@ -62,27 +62,7 @@ Page({
           console.log("成功返回，新计划是");
           console.log(newplan);
         }
-      })/*
-      var arr=getCurrentPages();
-      if(arr[arr.length-2].route=='pages/index/index'){
-        wx.navigateBack({
-          delta:1,
-          success:function(res){
-            var newplanNum = arr[arr.length - 2].data.planNum;
-           
-            var newplanData = arr[arr.length - 2].data.planData;
-            console.log(newplanData);
-            console.log(newplanNum);
-            //console.log(newplanData[0].planName)
-            newplanData.push(newplan);
-            newplanNum++;
-            arr[arr.length-2].setData({
-              planData:newplanData,
-              planNum:newplanNum
-            })
-          }
-        })
-      }*/
+      })
     }
   },
   /**

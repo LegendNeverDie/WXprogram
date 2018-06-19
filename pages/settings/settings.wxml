@@ -10,5 +10,5 @@
   <view>本软件系练习之作</view>
   <view>欢迎提出意见或建议</view>
   <view>邮箱：3160390535@qq.com</view>
-  <view>代码:https://github.com/Linking1/WXprogram.git</view>
+  <view style="font-size:0.7rem;">代码:github.com/LegendNeverDie/WXprogram</view>
 </block>
