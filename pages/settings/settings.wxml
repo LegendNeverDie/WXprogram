@@ -1,0 +1,14 @@
+<!--pages/settings/settings.wxml-->
+
+<!--
+关于软件，
+意见建议，
+-->
+<button bindtap='showdetail'>关于本软件</button>
+
+<block wx:if="{{isShow}}">
+  <view>本软件系练习之作</view>
+  <view>欢迎提出意见或建议</view>
+  <view>邮箱：3160390535@qq.com</view>
+  <view>代码:https://github.com/Linking1/WXprogram.git</view>
+</block>

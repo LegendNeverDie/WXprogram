@@ -1,0 +1,14 @@
+/* pages/settings/settings.wxss */
+button{
+  margin-top: 100rpx;
+  width:700rpx;
+  margin-left: 25rpx;
+  border-radius: 10rpx;
+  border:none;
+  color:white;
+  background-color: #555555;
+}
+view{
+  text-align: center;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,80 @@
+/* pages/achievement/achievement.wxss */
+.item{
+  margin-top:20rpx;
+  width:100%;
+  text-align: center;
+  color:#FFFEA0;
+  text-shadow: 5rpx 5rpx #C3BED4;
+}
+.item2{
+  line-height: 100rpx;
+  text-align: center;
+  color:#5E8579;
+}
+.star{
+  width:650rpx;
+  height:100rpx;
+  margin-left:50rpx;
+  background-color: #FEE388;
+  box-shadow:  5rpx 5rpx #C3BED4;
+  margin-top: 10rpx;
+}
+.starL{
+  float:left;
+  width:250rpx;
+  height:80rpx;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  border-right: 1rpx solid white;
+  line-height: 80rpx;
+  text-align: center;
+  color:#00343F;
+}
+.starR{
+  float:left;
+  width:379rpx;
+  height:80rpx;
+  margin-top: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color:#BA874C;
+}
+.achibox{
+  width:650rpx;
+  height:200rpx;
+  margin-top: 20rpx;
+  margin-left:50rpx;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx #C3BED4;
+  background-color: #FFB86C;
+  
+}
+.achiimg{
+  width:200rpx;
+  height:200rpx;
+  float:left;
+}
+.achiimg image{
+  width:160rpx;
+  height:160rpx;
+  margin-top:20rpx;
+  margin-left: 20rpx;
+}
+.achitext{
+  width:450rpx;
+  float: left;
+}
+.achitext1{
+  margin-top: 20rpx;
+  color:#869B74;
+  font-size: 1.5rem;
+  width:100%;
+  text-align: center;
+}
+.achitext2{
+  margin-top: 20rpx;
+  width:100%;
+  color:#FFEBCC;
+  text-align: center;
+}

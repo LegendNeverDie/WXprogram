@@ -1,0 +1,37 @@
+<!--pages/history/history.wxml-->
+<!--
+历史排序方式设定
+按时间排序，
+按星级排序，从高到低
+-->
+<view class="plan" data="{{item}}" data-index="{{index}}" wx:for="{{historyPlan}}" wx:key="index">
+  <view class='planName'>
+    {{item.planName}}
+  </view>
+  <view class='Time'>
+    {{item.Time}}
+  </view>
+  <view class='planT'>
+    <view class='planGoal'>
+      <text wx:if="{{item.planType==1}}">计划{{item.planTime}}天完成</text>
+      <text wx:if="{{item.planType==2}}">每天做一点点</text>
+    </view>
+    <view class='planTime' wx:if="{{item.planType==1}}">
+      <text wx:if="{{item.day1>=0}}">剩余{{item.day1}}天</text>
+      <text wx:else>已超时{{0-item.day1}}天</text>
+    </view>
+    <view class='planTime' wx:if="{{item.planType==2}}">
+      已坚持{{item.day2}}天
+    </view>
+  </view>
+  <view class="planDesc">{{item.planDesc}}</view>
+  <!--<view class="summary">评分:</view>-->
+  <view class="starimgBox">
+    <view bindtap="changeStar" wx:for="{{[0,1,2,3,4]}}" wx:for-item="i">
+      <image wx:if="{{i<item.planStar}}" src="/pages/image/star2.png"></image>
+      <image wx:if="{{i>=item.planStar}}" src="/pages/image/star1.png"></image>
+    </view>
+  </view>
+  <view class="summary">总结:</view>
+  <view class="summary">{{item.summary}}</view>
+</view>

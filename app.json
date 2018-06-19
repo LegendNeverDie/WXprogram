@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/achievement/achievement",
+    "pages/history/history",
+    "pages/settings/settings",
+    "pages/logs/logs",
+    "pages/index/newplan/newplan",
+    "pages/index/edit/edit"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#dddddd",
+    "selectedColor":"#000000",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "计划",
+      "iconPath":"pages/image/plan1.png",
+      "selectedIconPath":"pages/image/plan2.png"
+    },
+    {
+      "pagePath": "pages/achievement/achievement",
+      "text": "成就",
+      "iconPath": "pages/image/achieve1.png",
+      "selectedIconPath": "pages/image/achieve2.png"
+    },
+    {
+      "pagePath": "pages/history/history",
+      "text": "历史",
+      "iconPath": "pages/image/history1.png",
+      "selectedIconPath": "pages/image/history2.png"
+    },
+    {
+      "pagePath": "pages/settings/settings",
+      "text": "设置",
+      "iconPath": "pages/image/settings1.png",
+      "selectedIconPath": "pages/image/settings2.png"
+    }]
+  }
+}

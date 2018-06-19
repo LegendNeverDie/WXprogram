@@ -1,0 +1,66 @@
+/**index.wxss**/
+scroll-view{
+  margin-top: 50rpx;
+  width:750rpx;
+  height:auto;
+  padding-bottom: 100rpx;
+}
+.plan{
+  width:650rpx;
+  height: auto;
+  margin-left:50rpx;
+  margin-top:30rpx;
+  background-color: #F26157;
+  color:#ffffff;
+  border-radius: 20rpx;
+}
+.planName{
+  border-bottom:2rpx solid white;
+  width: 650rpx;
+  height:60rpx;
+}
+.planName_a{
+  padding-left:20rpx;
+  padding-top:10rpx;
+  border-right: 1rpx solid white;
+  float: left;
+  width: 250rpx;
+}
+.planName_b{
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+  float:left;
+}
+.planTime{
+  float:left;
+  width:250rpx;
+  height:60rpx;
+  padding-top: 10rpx;
+  padding-left:20rpx;
+}
+.planBut{
+  clear:both;
+  height:110rpx;
+  color:white;
+  background-color: #F1A66A;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.planDesc{
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.newplan{
+  margin-left:50rpx;
+  margin-top: 30rpx;
+  width:650rpx;
+  height:160rpx;
+  border-radius: 20rpx;
+  background-color: #DCDCDC;
+}
+.newplan image{
+  margin-top:20rpx;
+  width:120rpx;
+  height:120rpx;
+  margin-left: 265rpx;
+}

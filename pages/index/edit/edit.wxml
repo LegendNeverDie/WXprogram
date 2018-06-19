@@ -1,0 +1,34 @@
+<!--pages/index/edit/edit.wxml-->
+<view class="newplanTable" hidden="{{ishidden}}">
+  <form bindsubmit='formSubmit'>
+    <text class="planName_n">你的计划名字</text>
+    <input class="planName" name="planName" placeholder='{{edit.planName}}'></input>
+    <text class="planType_n">计划的类型</text>
+    <radio-group class="planType" name="planType">
+      <radio value='1' checked='{{edit.planType==1}}'>类型一</radio>
+      <radio value='2' checked='{{edit.planType==2}}'>类型二</radio>
+    </radio-group>
+    <text class="planDec_n">简述你的计划</text>
+    <textarea class="planDesc" name="planDesc" placeholder='{{edit.planDesc}}'></textarea>
+    <text class="planTime_n">计划期限</text>
+    <input class="planTime" name="planTime" type='number' placeholder='{{edit.planTime}}'></input>
+    
+    <button class="submit" form-type='submit'>完成编辑</button>
+    <button class="but" bindtap='achieve'>结束计划</button>
+    <button class="but" bindtap='deleteP'>删除计划</button>
+  </form>
+</view>
+<view class='eval' hidden="{{!ishidden}}">
+  <view>请为你的计划完成情况打分</view>
+  <view>
+    <view class="starimg" bindtap="changeStar" data-index="{{index}}" wx:for="{{starsUrl}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </view>
+    <form bindsubmit='finishPlan'class="form2">
+      <textarea placeholder='总结此次计划完成情况，可省略...' name="summary" class="evalForm" ></textarea>
+      <view></view>
+      <button class="form2-bt1" form-type='submit'>完成</button>
+      <button class='form2-bt2' bindtap="goback">返回</button>
+    </form>
+  </view>
+</view>

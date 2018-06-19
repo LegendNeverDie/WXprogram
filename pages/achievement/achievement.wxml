@@ -1,0 +1,93 @@
+<!--pages/achievement/achievement.wxml-->
+<view>
+<view class="item">你的成绩</view>
+<view class="star item2">完成{{num}}项计划</view>
+<view class="star">
+  <view class="starL">一星计划</view>
+  <view class="starR">{{planstarNum[0]}}个</view>
+</view>
+<view class="star">
+  <view class="starL">二星计划</view>
+  <view class="starR">{{planstarNum[1]}}个</view>
+</view>
+<view class="star">
+  <view class="starL">三星计划</view>
+  <view class="starR">{{planstarNum[2]}}个</view>
+</view>
+<view class="star">
+  <view class="starL">四星计划</view>
+  <view class="starR">{{planstarNum[3]}}个</view>
+</view>
+<view class="star">
+  <view class="starL">五星计划</view>
+  <view class="starR">{{planstarNum[4]}}个</view>
+</view>
+
+<view class="star item2">总共获得{{stars}}颗星</view>
+</view>
+<view class="item">获得成就</view>
+
+<view class="achibox" wx:if="{{num>=10}}">
+  <view class="achiimg">
+    <image src="/pages/image/a1.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">十年树木</view>
+    <view class="achitext2">定下并完成10项计划</view>
+  </view>
+</view>
+<view class="achibox" wx:if="{{num>=50}}">
+  <view class="achiimg">
+    <image src="/pages/image/a2.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">百年树人</view>
+    <view class="achitext2">定下并完成50项计划</view>
+  </view>
+</view>
+<view class="achibox" wx:if="{{num>=100}}">
+  <view class="achiimg">
+    <image src="/pages/image/a3.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">神</view>
+    <view class="achitext2">定下并完成100项计划</view>
+  </view>
+</view>
+<view class="achibox" wx:if="{{stars>=50}}">
+  <view class="achiimg">
+    <image src="/pages/image/a4.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">成就斐然</view>
+    <view class="achitext2">获得50颗星</view>
+  </view>
+</view>
+<view class="achibox" wx:if="{{stars>=100}}">
+  <view class="achiimg">
+    <image src="/pages/image/a5.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">迈向巅峰</view>
+    <view class="achitext2">获得100颗星</view>
+  </view>
+</view>
+<view class="achibox" wx:if="{{isShow}}">
+  <view class="achiimg">
+    <image src="/pages/image/a6.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">万里长征</view>
+    <view class="achitext2">某项计划坚持了100天</view>
+  </view>
+</view>
+<view class="achibox" wx:if="{{isShow2}}">
+  <view class="achiimg">
+    <image src="/pages/image/a7.png"></image>
+  </view>
+  <view class="achitext">
+    <view class="achitext1">坚持，别灰心</view>
+    <view class="achitext2">完成10个低星计划</view>
+  </view>
+</view>
+

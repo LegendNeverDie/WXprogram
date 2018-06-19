@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view>
+    <block wx:for="{{planData}}" data="{{item}}" data-index="{{index}}" wx:key="index">
+      <view class='plan'>
+        <view class='planName'>
+          <view class='planName_a'>{{item.planName}}</view>
+          <view class='planName_b'>
+            <text wx:if="{{item.planType==1}}">计划{{item.planTime}}天完成</text>
+            <text wx:else>每天做一点点</text>
+          </view>
+        </view>
+        <view class='planTime'>
+          <view class='planTime_b' wx:if="{{item.planType==1}}">
+            <text wx:if="{{item.day1>=0}}">剩余{{item.day1}}天</text>
+            <text wx:else>已超时{{0-item.day1}}天</text>
+          </view>
+          <view class='planTime_b' wx:if="{{item.planType==2}}">已坚持{{item.day2}}天</view>
+        </view>
+        <view class='planDesc'>{{item.planDesc}}</view>
+        <button class='planBut' id="{{index}}" bindtap='edit'>编辑</button>
+      </view>
+    </block>
+    <view class='newplan'>
+    <navigator url='/pages/index/newplan/newplan'><image src="/pages/image/add.png"></image></navigator>
+      
+    </view>
+  </scroll-view>
+</view>

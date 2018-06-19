@@ -1,0 +1,75 @@
+.newplanTable{
+  margin-top:50rpx;
+  margin-left:50rpx;
+  width:650rpx;
+  color:#000000;
+  background-color: #F1A66A;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.planName_n{
+  float:left;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  width:250rpx;
+  height:60rpx;
+}
+.planName{
+  float:left;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  height:60rpx;
+}
+.planType_n{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  clear: both;
+}
+.planType{
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.planDesc_n{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.planDesc{
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.planTime_n{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  float:left;
+  width:250rpx;
+}
+.planTime{
+  padding-top:10rpx;
+  padding-left:20rpx;
+  float:left;
+  margin-top:20rpx;
+}
+.submit{
+  padding-top:10rpx;
+  padding-left:20rpx;
+  margin-top:200rpx;
+  clear: both;
+  border-radius: 20rpx;
+  background-color: #f26157;
+  border:none;
+  color:#ffffff;
+}
+input{
+  clear: both;
+  background-color: #ffffff;
+  margin-left:20rpx;
+  width:590rpx;
+}
+textarea{
+  background-color: #ffffff;
+  margin-left:20rpx;
+  width:590rpx;
+}

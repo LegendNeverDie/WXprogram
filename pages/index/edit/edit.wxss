@@ -1,0 +1,119 @@
+/* pages/index/edit/edit.wxss */
+.newplanTable{
+  margin-top:50rpx;
+  margin-left:50rpx;
+  width:650rpx;
+  color:#ffffff;
+  background-color: #F1A66A;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.planName_n{
+  float:left;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  width:250rpx;
+  height:60rpx;
+}
+.planName{
+  float:left;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  height:60rpx;
+}
+.planType_n{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  clear: both;
+}
+.planType{
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.planDesc_n{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.planDesc{
+  padding-top:10rpx;
+  padding-left:20rpx;
+}
+.planTime_n{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  float:left;
+  width:250rpx;
+}
+.planTime{
+  padding-top:10rpx;
+  padding-left:20rpx;
+  float:left;
+  margin-top:20rpx;
+}
+.submit{
+  padding-top:10rpx;
+  padding-left:20rpx;
+  margin-top:200rpx;
+  clear: both;
+  border-radius: 20rpx;
+  background-color: #f26157;
+  border:none;
+  color:#ffffff;
+}
+input{
+  clear: both;
+  background-color: #ffffff;
+  margin-left:20rpx;
+  width:590rpx;
+}
+textarea{
+  background-color: #ffffff;
+  margin-left:20rpx;
+  width:590rpx;
+  clear: both;
+}
+.but{
+  margin-top:20rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  clear: both;
+  border-radius: 20rpx;
+  background-color: #f26157;
+  border:none;
+  color:#ffffff;
+}
+.starimg image{
+  margin-top:20rpx;
+  float:left;
+  width:80rpx;
+  height:80rpx;
+}
+.evalForm{
+  top:100rpx;
+  border-top:1rpx solid burlywood;
+  margin-left:0rpx;
+  width:100%;
+  display: block;
+}
+
+.form2-bt1{
+  margin-top:100rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  border-radius: 20rpx;
+  background-color: #f26157;
+  border:none;
+  color:#ffffff;
+}
+.form2-bt2{
+  margin-top:30rpx;
+  padding-top:10rpx;
+  padding-left:20rpx;
+  border-radius: 20rpx;
+  background-color: #f26157;
+  border:none;
+  color:#ffffff;
+}

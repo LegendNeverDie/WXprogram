@@ -1,0 +1,16 @@
+<view class="newplanTable">
+  <form bindsubmit='formSubmit'>
+    <view class="planName_n">你的计划名字:</view>
+    <input class="planName" name="planName" placeholder='在此输入...'></input>
+    <view class="planType_n">计划的类型:</view>
+    <radio-group class="planType" name="planType">
+      <view><radio value='1'>计划一定期限内完成</radio></view>
+      <view><radio value='2'>每天完成一定任务</radio></view>
+    </radio-group>
+    <view class="planDesc_n">简述你的计划:</view>
+    <textarea class="planDesc" name="planDesc" placeholder='在此输入...'></textarea>
+    <view class="planTime_n">计划期限:</view>
+    <input class="planTime" name="planTime" type='number' placeholder='在此输入...'></input>
+    <button class="submit" form-type='submit'>完成并返回</button>
+  </form>
+</view>
